@@ -67,8 +67,8 @@ var auto = Auto()
 print(auto.velocidad)
 
 for i in 1...20 {
-  
-    print(auto.cambiarVelocidad())
+    let velocidadCambio = auto.cambiarVelocidad()
+    print("\(i). \(velocidadCambio.actual), \(velocidadCambio.velocidadEnCadena)")
  
 }
 

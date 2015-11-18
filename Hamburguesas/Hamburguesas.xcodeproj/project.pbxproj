@@ -49,6 +49,7 @@
 		DE3BFAED1BFCCA5A002D066A /* HamburguesasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburguesasUITests.swift; sourceTree = "<group>"; };
 		DE3BFAEF1BFCCA5A002D066A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE3BFAFD1BFCCB28002D066A /* Datos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
+		DE8E4AF01BFD17AE00CCA71D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		DE3BFACC1BFCCA5A002D066A /* Hamburguesas */ = {
 			isa = PBXGroup;
 			children = (
+				DE8E4AEF1BFD179C00CCA71D /* playground */,
 				DE3BFACD1BFCCA5A002D066A /* AppDelegate.swift */,
 				DE3BFACF1BFCCA5A002D066A /* ViewController.swift */,
 				DE3BFAD11BFCCA5A002D066A /* Main.storyboard */,
@@ -126,6 +128,14 @@
 				DE3BFAEF1BFCCA5A002D066A /* Info.plist */,
 			);
 			path = HamburguesasUITests;
+			sourceTree = "<group>";
+		};
+		DE8E4AEF1BFD179C00CCA71D /* playground */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E4AF01BFD17AE00CCA71D /* MyPlayground.playground */,
+			);
+			name = playground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +497,7 @@
 				DE3BFAF41BFCCA5A002D066A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE3BFAF51BFCCA5A002D066A /* Build configuration list for PBXNativeTarget "HamburguesasTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +506,7 @@
 				DE3BFAF71BFCCA5A002D066A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE3BFAF81BFCCA5A002D066A /* Build configuration list for PBXNativeTarget "HamburguesasUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +515,7 @@
 				DE3BFAFA1BFCCA5A002D066A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

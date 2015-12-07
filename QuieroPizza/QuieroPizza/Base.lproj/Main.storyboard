@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oPn-uX-dES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -17,22 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Okt-q0-qpa" userLabel="1 persona, 2 personas, 4 personas">
-                                <rect key="frame" x="211" y="286" width="179" height="29"/>
+                                <rect key="frame" x="201" y="286" width="200" height="29"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="179" id="aFR-lO-2yH"/>
+                                    <constraint firstAttribute="width" constant="200" id="aFR-lO-2yH"/>
                                     <constraint firstAttribute="height" constant="28" id="zy9-EV-S7k"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="C"/>
-                                    <segment title="M"/>
-                                    <segment title="G"/>
+                                    <segment title="Chica"/>
+                                    <segment title="Mediana"/>
+                                    <segment title="Grande"/>
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGO-Th-qhi">
                                 <rect key="frame" x="249" y="446" width="103" height="30"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.31372549020000001" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.44165504564482755" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="103" id="s81-Tn-ubZ"/>
                                 </constraints>
@@ -40,18 +40,18 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dJX-sh-11K" kind="show" id="oVG-dv-eAi"/>
+                                    <segue destination="7F6-0E-orA" kind="show" id="5Ic-mW-OGO"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="J7Q-qh-8f8">
-                                <rect key="frame" x="250" y="107" width="100" height="100"/>
+                                <rect key="frame" x="250" y="138" width="100" height="100"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="HRK-Vb-hCF"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona el tamaño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oe-zy-lLM">
-                                <rect key="frame" x="219" y="35" width="163" height="21"/>
+                                <rect key="frame" x="219" y="78" width="163" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.22352941330000001" green="0.66666668650000005" blue="0.98039215800000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,38 +63,98 @@
                         <constraints>
                             <constraint firstItem="Okt-q0-qpa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="682-dk-hrA"/>
                             <constraint firstItem="kGO-Th-qhi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8GJ-gX-Ngy"/>
-                            <constraint firstItem="J7Q-qh-8f8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="87" id="OWe-Kl-SEa"/>
-                            <constraint firstItem="Okt-q0-qpa" firstAttribute="top" secondItem="J7Q-qh-8f8" secondAttribute="bottom" constant="79" id="Uvq-vZ-u2s"/>
+                            <constraint firstItem="J7Q-qh-8f8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="74" id="OWe-Kl-SEa"/>
+                            <constraint firstItem="Okt-q0-qpa" firstAttribute="top" secondItem="J7Q-qh-8f8" secondAttribute="bottom" constant="48" id="Uvq-vZ-u2s"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kGO-Th-qhi" secondAttribute="bottom" constant="124" id="YbK-Od-Hzz"/>
-                            <constraint firstItem="5oe-zy-lLM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="eqK-IU-y6X"/>
-                            <constraint firstItem="Okt-q0-qpa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rxg-2R-CMa"/>
+                            <constraint firstItem="5oe-zy-lLM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="eqK-IU-y6X"/>
+                            <constraint firstItem="Okt-q0-qpa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="rxg-2R-CMa"/>
                             <constraint firstItem="J7Q-qh-8f8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x8i-vm-8PD"/>
                             <constraint firstItem="5oe-zy-lLM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yaL-qB-25b"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="eGa-kx-3x1"/>
+                    <connections>
+                        <outlet property="tamaño" destination="Okt-q0-qpa" id="E01-ov-Rfa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440" y="387"/>
+            <point key="canvasLocation" x="1252" y="387"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="4XB-UN-X7n">
+        <scene sceneID="22F-ZY-P6I">
             <objects>
-                <viewController id="dJX-sh-11K" sceneMemberID="viewController">
+                <viewController id="7F6-0E-orA" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DZ7-3P-FZl"/>
-                        <viewControllerLayoutGuide type="bottom" id="lhK-eM-Wye"/>
+                        <viewControllerLayoutGuide type="top" id="6Cn-dx-vmv"/>
+                        <viewControllerLayoutGuide type="bottom" id="OLm-Wp-fEf"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cuU-sT-czw">
+                    <view key="view" contentMode="scaleToFill" id="bEe-Kx-IHi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tipo de masa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJz-Ui-z23">
+                                <rect key="frame" x="207" y="79" width="186" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.22352941330000001" green="0.66666668650000005" blue="0.98039215800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bzT-EY-u6U">
+                                <rect key="frame" x="196" y="286" width="209" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="Delgada"/>
+                                    <segment title="Crujiente"/>
+                                    <segment title="Gruesa"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owq-Yq-wZN">
+                                <rect key="frame" x="249" y="455" width="103" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.44165504560000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="uej-tj-lmA"/>
+                                </constraints>
+                                <state key="normal" title="Siguiente &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bzT-EY-u6U" firstAttribute="centerX" secondItem="PJz-Ui-z23" secondAttribute="centerX" id="4IA-IC-oW7"/>
+                            <constraint firstItem="owq-Yq-wZN" firstAttribute="centerX" secondItem="bEe-Kx-IHi" secondAttribute="centerX" id="5WH-ec-w10"/>
+                            <constraint firstItem="OLm-Wp-fEf" firstAttribute="top" secondItem="owq-Yq-wZN" secondAttribute="bottom" constant="115" id="Lxe-nK-bJ2"/>
+                            <constraint firstItem="PJz-Ui-z23" firstAttribute="top" secondItem="6Cn-dx-vmv" secondAttribute="bottom" constant="15" id="Tqp-ja-RKC"/>
+                            <constraint firstItem="bzT-EY-u6U" firstAttribute="centerY" secondItem="bEe-Kx-IHi" secondAttribute="centerY" id="heY-Ns-sVm"/>
+                            <constraint firstItem="bzT-EY-u6U" firstAttribute="centerX" secondItem="bEe-Kx-IHi" secondAttribute="centerX" id="yeA-RY-82P"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Wg-7Z-JDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ca-Z0-8xw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1127" y="387"/>
+            <point key="canvasLocation" x="1957" y="387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yfh-0y-137">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oPn-uX-dES" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pFa-gP-uRp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kjp-af-5lg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7AD-Ox-Qsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="387"/>
         </scene>
     </scenes>
     <resources>

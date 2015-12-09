@@ -11,6 +11,7 @@ import UIKit
 class TipoMasaController: UIViewController {
 
     @IBOutlet weak var tipoMasa: UISegmentedControl!
+    @IBOutlet weak var tipoMasaImg: UIImageView!
     
     var tamañoSeleccionado : String? = nil
     
@@ -31,14 +32,51 @@ class TipoMasaController: UIViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
+    @IBAction func onChangeValue(sender: AnyObject) {
+        
+        
+        switch(tipoMasa.selectedSegmentIndex) {
+            
+        case 0:
+            let image = UIImage(named: "thin")
+            tipoMasaImg.image = image
+            break
+            
+        case 1:
+            let image = UIImage(named: "crunchy")
+            tipoMasaImg.image = image
+            break
+            
+        case 2:
+            let image = UIImage(named: "wide")
+            tipoMasaImg.image = image
+            break
+            
+        default:
+            break
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
     }
-    */
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let sigVista = segue.destinationViewController as! TipoQuesoController
+        sigVista.tamañoSeleccionado = tamañoSeleccionado
+        
+        if(tipoMasa.selectedSegmentIndex >= 0) {
+            sigVista.tipoMasa = tipoMasa.titleForSegmentAtIndex(tipoMasa.selectedSegmentIndex)
+            
+        } else {
+            
+            sigVista.tipoMasa = nil
+        }
+        
+        
+
+        
+    }
+    
 
 }

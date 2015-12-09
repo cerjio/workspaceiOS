@@ -47,7 +47,7 @@
                                     <segue destination="7F6-0E-orA" kind="show" id="5Ic-mW-OGO"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="J7Q-qh-8f8">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizzaGrande" translatesAutoresizingMaskIntoConstraints="NO" id="J7Q-qh-8f8">
                                 <rect key="frame" x="250" y="138" width="100" height="100"/>
                                 <animations/>
                                 <constraints>
@@ -105,7 +105,7 @@
                                 <color key="textColor" red="0.22352941330000001" green="0.66666668650000005" blue="0.98039215800000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bzT-EY-u6U">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="bzT-EY-u6U">
                                 <rect key="frame" x="196" y="286" width="209" height="29"/>
                                 <animations/>
                                 <segments>
@@ -113,6 +113,9 @@
                                     <segment title="Crujiente"/>
                                     <segment title="Gruesa"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onChangeValue:" destination="7F6-0E-orA" eventType="valueChanged" id="xrW-Ug-41P"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owq-Yq-wZN">
                                 <rect key="frame" x="249" y="455" width="103" height="30"/>
@@ -153,16 +156,17 @@
                     </view>
                     <connections>
                         <outlet property="tipoMasa" destination="bzT-EY-u6U" id="qeQ-ED-av8"/>
+                        <outlet property="tipoMasaImg" destination="O2M-B1-wgs" id="XBe-Uc-bkG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ca-Z0-8xw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1957" y="387"/>
         </scene>
-        <!--View Controller-->
+        <!--Tipo Queso Controller-->
         <scene sceneID="klj-Na-mAa">
             <objects>
-                <viewController id="lPb-IB-2YZ" sceneMemberID="viewController">
+                <viewController id="lPb-IB-2YZ" customClass="TipoQuesoController" customModule="QuieroPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MOR-H7-sMU"/>
                         <viewControllerLayoutGuide type="bottom" id="vAl-LD-Cce"/>
@@ -178,7 +182,7 @@
                                 <color key="textColor" red="0.22352941330000001" green="0.66666668650000005" blue="0.98039215800000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hPZ-x7-iK3">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="hPZ-x7-iK3">
                                 <rect key="frame" x="154" y="286" width="292" height="29"/>
                                 <animations/>
                                 <constraints>
@@ -190,6 +194,9 @@
                                     <segment title="Parmesano"/>
                                     <segment title="Sin Queso"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onChangeValue:" destination="lPb-IB-2YZ" eventType="valueChanged" id="E7K-fX-kav"/>
+                                </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheese1" translatesAutoresizingMaskIntoConstraints="NO" id="tCW-yZ-BdN">
                                 <rect key="frame" x="180" y="128" width="240" height="128"/>
@@ -228,15 +235,19 @@
                             <constraint firstItem="tCW-yZ-BdN" firstAttribute="centerX" secondItem="fs1-ye-n4Z" secondAttribute="centerX" id="pWb-8j-NNk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="quesoImg" destination="tCW-yZ-BdN" id="ij9-jN-GvY"/>
+                        <outlet property="tipoQueso" destination="hPZ-x7-iK3" id="2cH-Z3-wo8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEL-Vi-bka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2667" y="387"/>
         </scene>
-        <!--View Controller-->
+        <!--Ingredientes Controller-->
         <scene sceneID="Dbe-ag-T8F">
             <objects>
-                <viewController id="Qsw-9d-yKz" sceneMemberID="viewController">
+                <viewController id="Qsw-9d-yKz" customClass="IngredientesController" customModule="QuieroPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rjq-pT-1Zl"/>
                         <viewControllerLayoutGuide type="bottom" id="bz3-7z-wit"/>
@@ -392,8 +403,8 @@
     </scenes>
     <resources>
         <image name="cheese1" width="64" height="64"/>
-        <image name="pizza" width="64" height="64"/>
         <image name="pizzaFinal" width="64" height="64"/>
+        <image name="pizzaGrande" width="128" height="128"/>
         <image name="thin" width="64" height="64"/>
         <image name="unchecked" width="32" height="32"/>
     </resources>

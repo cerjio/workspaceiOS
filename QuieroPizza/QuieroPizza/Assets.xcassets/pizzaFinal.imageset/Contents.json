@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "1449455352_47.png",
+      "filename" : "salmon-pizza-64.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "salmon-pizza-128.png",
       "scale" : "2x"
     },
     {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE854D881C17ECB300B44215 /* TipoMasaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE854D871C17ECB300B44215 /* TipoMasaController.swift */; settings = {ASSET_TAGS = (); }; };
 		DE901D691C14CD1400A65F68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE901D681C14CD1400A65F68 /* AppDelegate.swift */; };
 		DE901D6B1C14CD1400A65F68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE901D6A1C14CD1400A65F68 /* ViewController.swift */; };
 		DE901D6E1C14CD1400A65F68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE901D6C1C14CD1400A65F68 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE854D871C17ECB300B44215 /* TipoMasaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoMasaController.swift; sourceTree = "<group>"; };
 		DE901D651C14CD1400A65F68 /* QuieroPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuieroPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE901D681C14CD1400A65F68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE901D6A1C14CD1400A65F68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				DE901D6F1C14CD1400A65F68 /* Assets.xcassets */,
 				DE901D711C14CD1400A65F68 /* LaunchScreen.storyboard */,
 				DE901D741C14CD1400A65F68 /* Info.plist */,
+				DE854D871C17ECB300B44215 /* TipoMasaController.swift */,
 			);
 			path = QuieroPizza;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE854D881C17ECB300B44215 /* TipoMasaController.swift in Sources */,
 				DE901D6B1C14CD1400A65F68 /* ViewController.swift in Sources */,
 				DE901D691C14CD1400A65F68 /* AppDelegate.swift in Sources */,
 			);
@@ -481,6 +485,7 @@
 				DE901D8F1C14CD1400A65F68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE901D901C14CD1400A65F68 /* Build configuration list for PBXNativeTarget "QuieroPizzaTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +494,7 @@
 				DE901D921C14CD1400A65F68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE901D931C14CD1400A65F68 /* Build configuration list for PBXNativeTarget "QuieroPizzaUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +503,7 @@
 				DE901D951C14CD1400A65F68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

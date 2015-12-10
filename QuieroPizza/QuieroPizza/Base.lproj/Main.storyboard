@@ -175,13 +175,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tipo de queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRR-Jt-6KQ">
-                                <rect key="frame" x="204" y="77" width="192" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.22352941330000001" green="0.66666668650000005" blue="0.98039215800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="hPZ-x7-iK3">
                                 <rect key="frame" x="154" y="286" width="292" height="29"/>
                                 <animations/>
@@ -199,11 +192,11 @@
                                 </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheese1" translatesAutoresizingMaskIntoConstraints="NO" id="tCW-yZ-BdN">
-                                <rect key="frame" x="180" y="128" width="240" height="128"/>
+                                <rect key="frame" x="250" y="149" width="100" height="100"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="oRQ-xr-Lbh"/>
-                                    <constraint firstAttribute="width" constant="240" id="xOx-MU-y3J"/>
+                                    <constraint firstAttribute="height" constant="100" id="oRQ-xr-Lbh"/>
+                                    <constraint firstAttribute="width" constant="100" id="xOx-MU-y3J"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6o-6O-8F0">
@@ -220,17 +213,23 @@
                                     <segue destination="Qsw-9d-yKz" kind="show" id="CYH-27-Nlp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tipo de queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRR-Jt-6KQ">
+                                <rect key="frame" x="204" y="79" width="192" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.22352941330000001" green="0.66666668650000005" blue="0.98039215800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tCW-yZ-BdN" firstAttribute="top" secondItem="tRR-Jt-6KQ" secondAttribute="bottom" constant="30" id="C6r-a0-RAu"/>
-                            <constraint firstItem="tRR-Jt-6KQ" firstAttribute="centerX" secondItem="fs1-ye-n4Z" secondAttribute="centerX" id="CDe-aw-6Ny"/>
+                            <constraint firstItem="tRR-Jt-6KQ" firstAttribute="top" secondItem="MOR-H7-sMU" secondAttribute="bottom" constant="15" id="2tM-fJ-Mzj"/>
+                            <constraint firstItem="hPZ-x7-iK3" firstAttribute="centerX" secondItem="tCW-yZ-BdN" secondAttribute="centerX" id="4zW-rD-ijK"/>
+                            <constraint firstItem="tRR-Jt-6KQ" firstAttribute="centerX" secondItem="fs1-ye-n4Z" secondAttribute="centerX" id="675-rv-j6g"/>
                             <constraint firstItem="hPZ-x7-iK3" firstAttribute="centerY" secondItem="fs1-ye-n4Z" secondAttribute="centerY" id="LAg-4a-xe0"/>
-                            <constraint firstItem="tRR-Jt-6KQ" firstAttribute="top" secondItem="MOR-H7-sMU" secondAttribute="bottom" constant="13" id="TKD-HA-45y"/>
                             <constraint firstItem="vAl-LD-Cce" firstAttribute="top" secondItem="m6o-6O-8F0" secondAttribute="bottom" constant="104" id="YDD-bT-rYA"/>
-                            <constraint firstItem="tCW-yZ-BdN" firstAttribute="centerY" secondItem="fs1-ye-n4Z" secondAttribute="centerY" constant="-108" id="f0b-7S-xPc"/>
-                            <constraint firstItem="tRR-Jt-6KQ" firstAttribute="centerX" secondItem="hPZ-x7-iK3" secondAttribute="centerX" id="fpo-0z-7bW"/>
+                            <constraint firstItem="tCW-yZ-BdN" firstAttribute="centerY" secondItem="fs1-ye-n4Z" secondAttribute="centerY" constant="-101" id="f0b-7S-xPc"/>
                             <constraint firstItem="m6o-6O-8F0" firstAttribute="centerX" secondItem="fs1-ye-n4Z" secondAttribute="centerX" id="iXf-E9-mq4"/>
                             <constraint firstItem="tCW-yZ-BdN" firstAttribute="centerX" secondItem="fs1-ye-n4Z" secondAttribute="centerX" id="pWb-8j-NNk"/>
                         </constraints>
@@ -274,12 +273,15 @@
                                 </constraints>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvc-B5-u2N">
-                                <rect key="frame" x="98" y="139" width="87" height="32"/>
+                                <rect key="frame" x="68" y="139" width="87" height="32"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.22352941330000001" green="0.66666668650000005" blue="0.98039215800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Jamón" image="unchecked">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.25098039215686274" green="0.8784313725490196" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickJamon:" destination="Qsw-9d-yKz" eventType="touchUpInside" id="exr-Mh-1UB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hal-2g-2gu">
                                 <rect key="frame" x="249" y="474" width="103" height="30"/>
@@ -295,21 +297,102 @@
                                     <segue destination="0hL-Pb-ukg" kind="show" id="tyy-vt-HEf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxz-4D-UJr">
+                                <rect key="frame" x="68" y="179" width="114" height="32"/>
+                                <animations/>
+                                <state key="normal" title="Pepperoni" image="unchecked">
+                                    <color key="titleColor" red="0.25098039215686274" green="0.8784313725490196" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickPepperoni:" destination="Qsw-9d-yKz" eventType="touchUpInside" id="l7r-Ky-Iy0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAk-2v-SrR">
+                                <rect key="frame" x="68" y="219" width="71" height="32"/>
+                                <animations/>
+                                <state key="normal" title="Pavo" image="unchecked">
+                                    <color key="titleColor" red="0.25098039215686274" green="0.8784313725490196" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickPavo:" destination="Qsw-9d-yKz" eventType="touchUpInside" id="j90-Ww-XN1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyZ-Rq-Jol">
+                                <rect key="frame" x="68" y="259" width="110" height="32"/>
+                                <animations/>
+                                <state key="normal" title="Salchicha" image="unchecked">
+                                    <color key="titleColor" red="0.25098039215686274" green="0.8784313725490196" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSalchicha:" destination="Qsw-9d-yKz" eventType="touchUpInside" id="NBh-dS-mx1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mE4-M7-tnj">
+                                <rect key="frame" x="68" y="299" width="103" height="32"/>
+                                <animations/>
+                                <state key="normal" title="Aceituna" image="unchecked">
+                                    <color key="titleColor" red="0.25098039215686274" green="0.8784313725490196" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickAceituna:" destination="Qsw-9d-yKz" eventType="touchUpInside" id="1k6-4W-lne"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pK1-PD-fvz">
+                                <rect key="frame" x="186" y="179" width="103" height="32"/>
+                                <animations/>
+                                <state key="normal" title="Pimiento" image="unchecked">
+                                    <color key="titleColor" red="0.25098039215686274" green="0.8784313725490196" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickPimiento:" destination="Qsw-9d-yKz" eventType="touchUpInside" id="znd-Kf-K6p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI3-u3-OA1">
+                                <rect key="frame" x="186" y="139" width="93" height="32"/>
+                                <animations/>
+                                <state key="normal" title="Cebolla" image="unchecked">
+                                    <color key="titleColor" red="0.25098039215686274" green="0.8784313725490196" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickCebolla:" destination="Qsw-9d-yKz" eventType="touchUpInside" id="Hcy-EF-X4e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sI3-u3-OA1" firstAttribute="leading" secondItem="sZ7-1y-dbi" secondAttribute="leadingMargin" constant="166" id="00B-kC-GUt"/>
+                            <constraint firstItem="mAk-2v-SrR" firstAttribute="top" secondItem="Rjq-pT-1Zl" secondAttribute="bottom" constant="155" id="0gp-wd-TzV"/>
+                            <constraint firstItem="pK1-PD-fvz" firstAttribute="leading" secondItem="sZ7-1y-dbi" secondAttribute="leadingMargin" constant="166" id="6Yq-Kh-jmC"/>
                             <constraint firstItem="Hal-2g-2gu" firstAttribute="centerX" secondItem="sZ7-1y-dbi" secondAttribute="centerX" id="6zb-96-uCW"/>
+                            <constraint firstItem="pK1-PD-fvz" firstAttribute="top" secondItem="Rjq-pT-1Zl" secondAttribute="bottom" constant="115" id="7bM-9U-tgn"/>
+                            <constraint firstItem="sI3-u3-OA1" firstAttribute="top" secondItem="Rjq-pT-1Zl" secondAttribute="bottom" constant="75" id="B8T-Yz-wfU"/>
+                            <constraint firstItem="mE4-M7-tnj" firstAttribute="top" secondItem="Rjq-pT-1Zl" secondAttribute="bottom" constant="235" id="Dce-i4-Xee"/>
+                            <constraint firstItem="yxz-4D-UJr" firstAttribute="top" secondItem="Rjq-pT-1Zl" secondAttribute="bottom" constant="115" id="K4N-1y-JDl"/>
                             <constraint firstItem="gYf-GP-nj7" firstAttribute="top" secondItem="bpv-Ml-iYZ" secondAttribute="bottom" constant="46" id="MGB-QT-dMh"/>
+                            <constraint firstItem="zyZ-Rq-Jol" firstAttribute="leading" secondItem="sZ7-1y-dbi" secondAttribute="leadingMargin" constant="48" id="YOl-cv-SRV"/>
+                            <constraint firstItem="yxz-4D-UJr" firstAttribute="leading" secondItem="sZ7-1y-dbi" secondAttribute="leadingMargin" constant="48" id="c4X-tv-xL2"/>
                             <constraint firstItem="tvc-B5-u2N" firstAttribute="top" secondItem="Rjq-pT-1Zl" secondAttribute="bottom" constant="75" id="cXf-Vw-Srg"/>
                             <constraint firstItem="bz3-7z-wit" firstAttribute="top" secondItem="Hal-2g-2gu" secondAttribute="bottom" constant="96" id="dVZ-SZ-AKk"/>
+                            <constraint firstItem="mE4-M7-tnj" firstAttribute="leading" secondItem="sZ7-1y-dbi" secondAttribute="leadingMargin" constant="48" id="eAl-n3-ijR"/>
                             <constraint firstItem="bz3-7z-wit" firstAttribute="top" secondItem="gYf-GP-nj7" secondAttribute="bottom" constant="432" id="k6s-gX-Bn7"/>
+                            <constraint firstItem="zyZ-Rq-Jol" firstAttribute="top" secondItem="Rjq-pT-1Zl" secondAttribute="bottom" constant="195" id="kRb-kE-nlY"/>
                             <constraint firstItem="bpv-Ml-iYZ" firstAttribute="top" secondItem="Rjq-pT-1Zl" secondAttribute="bottom" constant="15" id="lsb-IG-m82"/>
                             <constraint firstItem="bpv-Ml-iYZ" firstAttribute="centerX" secondItem="sZ7-1y-dbi" secondAttribute="centerX" id="oeg-P9-buv"/>
                             <constraint firstItem="gYf-GP-nj7" firstAttribute="leading" secondItem="sZ7-1y-dbi" secondAttribute="leading" constant="221" id="qaI-AP-oNl"/>
-                            <constraint firstItem="tvc-B5-u2N" firstAttribute="leading" secondItem="sZ7-1y-dbi" secondAttribute="leadingMargin" constant="78" id="vgK-bw-C9S"/>
+                            <constraint firstItem="tvc-B5-u2N" firstAttribute="leading" secondItem="sZ7-1y-dbi" secondAttribute="leadingMargin" constant="48" id="vgK-bw-C9S"/>
+                            <constraint firstItem="mAk-2v-SrR" firstAttribute="leading" secondItem="sZ7-1y-dbi" secondAttribute="leadingMargin" constant="48" id="vtv-I7-YRh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aceituna" destination="mE4-M7-tnj" id="DOn-ms-csJ"/>
+                        <outlet property="cebolla" destination="sI3-u3-OA1" id="fra-z2-YLu"/>
+                        <outlet property="jamon" destination="tvc-B5-u2N" id="aNI-I6-Bxw"/>
+                        <outlet property="pavo" destination="mAk-2v-SrR" id="Mgv-Nm-bpD"/>
+                        <outlet property="pepperoni" destination="yxz-4D-UJr" id="843-mh-V3K"/>
+                        <outlet property="pimiento" destination="pK1-PD-fvz" id="sip-Gs-XCL"/>
+                        <outlet property="salchicha" destination="zyZ-Rq-Jol" id="Jf6-0Y-T7b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rD-wH-HZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

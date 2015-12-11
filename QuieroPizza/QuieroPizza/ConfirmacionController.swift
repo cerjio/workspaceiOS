@@ -65,20 +65,22 @@ class ConfirmacionController: UIViewController {
         }
     }
     
-
-    @IBAction func onClickConfirmacion(sender: AnyObject) {
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
         
         if(faltantes.count > 0) {
             
-            let alertController = UIAlertController(title: "Hey te hace falta seleccionar:", message: faltantes.joinWithSeparator(","), preferredStyle: .Alert)
+            let alertController = UIAlertController(title: "Hey, te hace falta seleccionar:", message: faltantes.joinWithSeparator(","), preferredStyle: .Alert)
             let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alertController.addAction(defaultAction)
             
-            presentViewController(alertController, animated: true, completion: nil)
+            self.presentViewController(alertController, animated: true, completion: nil)
             
-            return
+            return false
+        } else {
+            
+            return true
         }
-        
+
         
     }
 

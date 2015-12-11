@@ -487,7 +487,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onClickConfirmacion:" destination="0hL-Pb-ukg" eventType="touchUpInside" id="Vud-rE-PxR"/>
                                     <segue destination="keo-ez-4x0" kind="showDetail" id="O5C-mY-5Bp"/>
                                 </connections>
                             </button>

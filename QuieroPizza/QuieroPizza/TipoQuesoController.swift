@@ -29,17 +29,6 @@ class TipoQuesoController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        
-        if(tamañoSeleccionado != nil) {
-            print(tamañoSeleccionado!)
-        }
-        
-        if(tipoMasa != nil){
-            print(tipoMasa!)
-        }
-        
-    }
     @IBAction func onChangeValue(sender: AnyObject) {
         
         

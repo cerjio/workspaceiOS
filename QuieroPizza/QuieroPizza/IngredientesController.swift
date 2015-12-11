@@ -26,23 +26,7 @@ class IngredientesController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func viewWillAppear(animated: Bool) {
         
-        if(tamañoSeleccionado != nil) {
-            print(tamañoSeleccionado!)
-        }
-        
-        if(tipoMasa != nil) {
-            print(tipoMasa!)
-        }
-        
-        if(tipoQueso != nil) {
-            print(tipoQueso!)
-        }
-    }
-    
-    
     @IBAction func onClickIngrediente(sender: AnyObject) {
         
         var image = UIImage(named: "checked")

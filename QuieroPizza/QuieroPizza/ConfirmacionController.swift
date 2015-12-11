@@ -14,9 +14,11 @@ class ConfirmacionController: UIViewController {
     var tipoMasa : String? = nil
     var tipoQueso : String? = nil
     var ingredientes : String? = nil
+    var faltantes: [String] = []
     
     @IBOutlet weak var tamañoEtiqueta: UILabel!
     @IBOutlet weak var ingredientesEtiqueta: UILabel!
+    @IBOutlet weak var ingredientesValores: UILabel!
     @IBOutlet weak var quesoEtiqueta: UILabel!
     @IBOutlet weak var masaEtiqueta: UILabel!
     
@@ -37,25 +39,48 @@ class ConfirmacionController: UIViewController {
         
         if(tamañoSeleccionado != nil) {
             tamañoEtiqueta.text! += tamañoSeleccionado!
+        } else {
+            faltantes.append(tamañoEtiqueta.text!.stringByReplacingOccurrencesOfString(":", withString: ""))
         }
         
         if(tipoMasa != nil) {
             masaEtiqueta.text! += tipoMasa!
+        } else {
+            faltantes.append(masaEtiqueta.text!.stringByReplacingOccurrencesOfString(":", withString: ""))
         }
         
         
         if(tipoQueso != nil) {
             quesoEtiqueta.text! += tipoQueso!
+        } else {
+            faltantes.append( quesoEtiqueta.text!.stringByReplacingOccurrencesOfString(":", withString: ""))
         }
         
         if(ingredientes != nil) {
             
-            ingredientesEtiqueta.text! += ingredientes!
-            ingredientesEtiqueta.sizeToFit()
+            ingredientesValores.text! += ingredientes!
+            ingredientesValores.sizeToFit()
+        } else {
+            faltantes.append(ingredientesEtiqueta.text!.stringByReplacingOccurrencesOfString(":", withString: ""))
         }
     }
     
 
+    @IBAction func onClickConfirmacion(sender: AnyObject) {
+        
+        if(faltantes.count > 0) {
+            
+            let alertController = UIAlertController(title: "Hey te hace falta seleccionar:", message: faltantes.joinWithSeparator(","), preferredStyle: .Alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        }
+        
+        
+    }
 
     /*
     // MARK: - Navigation

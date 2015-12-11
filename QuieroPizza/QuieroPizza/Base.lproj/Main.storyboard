@@ -486,6 +486,10 @@
                                 <state key="normal" title="Confirmar">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickConfirmacion:" destination="0hL-Pb-ukg" eventType="touchUpInside" id="Vud-rE-PxR"/>
+                                    <segue destination="keo-ez-4x0" kind="showDetail" id="O5C-mY-5Bp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -512,7 +516,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ingredientesEtiqueta" destination="BjJ-4e-vaL" id="15Y-v2-rzn"/>
+                        <outlet property="ingredientesEtiqueta" destination="MZc-9m-MrL" id="6Ir-JT-Ipz"/>
+                        <outlet property="ingredientesValores" destination="BjJ-4e-vaL" id="9cm-ZC-Cmc"/>
                         <outlet property="masaEtiqueta" destination="CAT-E6-ZqF" id="36N-pd-2HN"/>
                         <outlet property="quesoEtiqueta" destination="nJ7-dQ-xsd" id="Dvv-Qs-vSI"/>
                         <outlet property="tamañoEtiqueta" destination="4Ub-74-cJk" id="HiK-A9-zBn"/>
@@ -521,6 +526,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y10-xp-fcG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4067" y="387"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xRF-wn-4n8">
+            <objects>
+                <viewController id="keo-ez-4x0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCK-Uz-Tym"/>
+                        <viewControllerLayoutGuide type="bottom" id="crt-GU-sK0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dY9-2O-dcC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocinando..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd3-x0-kUS">
+                                <rect key="frame" x="252" y="321" width="96" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QxQ-ZP-HNz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.22352941330000001" green="0.66666668650000005" blue="0.98039215800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cook" translatesAutoresizingMaskIntoConstraints="NO" id="6jG-Xc-VcQ">
+                                <rect key="frame" x="146" y="81" width="309" height="197"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="OI0-yO-xej"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="crt-GU-sK0" firstAttribute="top" secondItem="Nd3-x0-kUS" secondAttribute="bottom" constant="258" id="BQ0-eG-mXJ"/>
+                            <constraint firstItem="Nd3-x0-kUS" firstAttribute="centerX" secondItem="dY9-2O-dcC" secondAttribute="centerX" id="bpF-2s-21g"/>
+                            <constraint firstItem="6jG-Xc-VcQ" firstAttribute="centerX" secondItem="dY9-2O-dcC" secondAttribute="centerX" id="ked-8H-V04"/>
+                            <constraint firstItem="Nd3-x0-kUS" firstAttribute="top" secondItem="6jG-Xc-VcQ" secondAttribute="bottom" constant="43" id="rvf-AU-STK"/>
+                            <constraint firstItem="6jG-Xc-VcQ" firstAttribute="top" secondItem="PCK-Uz-Tym" secondAttribute="bottom" constant="61" id="uKm-nN-DY4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajC-hD-I8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4740" y="387"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Yfh-0y-137">
@@ -544,6 +594,7 @@
     </scenes>
     <resources>
         <image name="cheese1" width="64" height="64"/>
+        <image name="cook" width="199" height="128"/>
         <image name="pizzaFinal" width="64" height="64"/>
         <image name="pizzaMed" width="64" height="64"/>
         <image name="thin" width="64" height="64"/>
